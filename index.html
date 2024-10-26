@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wedding Invitation</title>
+    <style>
+        body {
+            position: relative;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            color: #5d4037;
+        }
+
+        /* The actual background image with a pseudo-element */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('floral-pattern.png'); /* Add your image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.2; /* Adjust the opacity here */
+            z-index: -1; /* Push it behind the content */
+        }
+
+        /* Content styling */
+        .invitation-container {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #d32f2f;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #8e24aa;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #00796b;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #5d4037;
+        }
+
+        .ganesha {
+            width: 150px;
+            height: auto;
+            margin-top: 20px;
+            animation: rotate 5s infinite linear;
+        }
+
+        .ganesh-mantra {
+            font-size: 1.2em;
+            color: #6a1b9a;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+/* 
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        } */
+
+        .divider {
+            margin: 20px 0;
+            border-bottom: 2px solid #d32f2f;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 1.1em;
+            color: #6a1b9a;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invitation-container">
+        <!-- Ganesha Image -->
+        <br>
+        विघ्न हरन मंगल करन श्री गणपति महाराज 
+        प्रथम निमंत्रण आपको पूरण करियो काज ।।
+        <br>
+        <img src="ganesha.jpg" alt="Ganesha" class="ganesha">
+        <br>
+        <br>
+        <div class="ganesh-mantra">
+            वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।
+            निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥
+        </div>
+
+        <h2>We the families of</h2>
+
+        <h1>Pratiksha Srivastava</h1>
+        <p>Granddaughter of Late Shri Kailash Kumar Verma and Late Smt. Madhuri Verma</p>
+        <p>Daughter of Smt. Archana Verma and Late Shri Deepak Verma</p>
+
+        <h2>and</h2>
+
+        <h1>Devesh Srivastava</h1>
+        <p>Grandson of Late Rajendra Prasad Srivastava and Late Saraswati Devi</p>
+        <p>Son of Smt. Pratima Srivastava and Shri Anil Kumar Srivastava</p>
+
+        <div class="divider"></div>
+
+        <h3>Warmly invite you to celebrate our union</h3>
+        <p>on <strong>4th December 2024 at 8 PM</strong><br>at <a href="https://maps.app.goo.gl/d3zXQ5ennTkbGCJW8">Swayamvar Marriage Hall, Jaunpur</a></p>
+
+        <h3>Join us for the Sangeet ceremony</h3>
+        <p>on <strong>3rd December 2024 at 6 PM</strong><br>at <a href="https://maps.app.goo.gl/iMnwu9BtYKNqyvja9">Red Chilli Restaurant, Jaunpur</a></p>
+
+
+        <div class="divider"></div>
+    
+        <p class="footer">Darshan-abhilashi<br>Mayank Srivastava, Shubham Srivastava, Yash Srivastava, Nihal Srivastava, Ayaansh Srivastava and the whole Srivastava Family</p>
+        <p class="footer">Vineet<br>Rajdeep Verma, Sanjay Srivastava, Dheeraj Srivastava, Neeraj Srivastava
+            <br>Maalti Villa, Madhav Nagar Colony, Shivapar, Jaunpur
+        </p>
+
+
+        <div class="divider"></div>
+
+        <br>
+        मंगलम् भगवान विष्णुः, मंगलम् गरुणध्वजः।
+        मंगलम् पुण्डरी काक्षः, मंगलाय तनो हरिः॥
+
+    </div>
+
+</body>
+</html>
